@@ -118,6 +118,8 @@ Then configure it as the initial admin of the NiFi instance in *conf/authorizers
 * `Initial User Identity 1` property of the `userGroupProvider` section
 * `Initial Admin Identity` property of the `accessPolicyProvider` section
 
+[In case if above hashed not worked and throws authentication failed, Please use bottom reset tool to rest your password with regular text It will directly convert it in hash and saved it in login-credential file.]
+Before starting NiFi make sure "authorizations.xml" & "users.xml" are deleted.
 ### Start NiFi
 
 Start NiFi and connect using the credentials configured for the initial admin user.
